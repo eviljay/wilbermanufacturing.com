@@ -1,0 +1,511 @@
+html,body {
+	margin:0;
+	padding:0;
+	min-height: 100%; /* needed for container min-height */
+	height: 100%;
+	background-image: url(images/bg_fade.jpg);
+	background-color: #928D53; 
+	/*background-color: #E9E6DE;*/
+	background-repeat: repeat-x;
+	font-family:arial,sans-serif;
+	font-size:12pt;
+	/*display:block*/
+ }
+.midd{
+	top:0px;
+	width:1000px;
+	padding-top:5px;
+	margin-left: auto; 
+	margin-right: auto;
+	border-left:3px solid black;
+	border-top:3px solid black;
+	border-right:3px solid black;
+	border-bottom:3px solid black;
+	background-color: #BDB76B; 
+	/*background-color: #E9E6DE;LOCAL**/
+	text-align:center;
+ }
+
+/*/ TOP MENU /*/
+	.topmenu{
+		position:relative;
+		background-image: url(images/top_line_bg.jpg); 
+		height:94px;
+		width:1000px;
+	}
+	.topleftimage{
+		margin-top:3px;
+		margin-left:5px;
+		width:56px;
+		float:left;
+	}
+	.wilbermanufacturing_top{
+		margin-top:15px;
+		margin-left:5px;
+		float:left;
+		font-weight:bold;
+		font-size:16pt;
+		cursor:pointer;
+		cursor:hand;
+		text-decoration:none;
+	}
+	.toprightmenu{
+		float:right;
+		font-size:11pt;
+	}
+
+	.toprightlink{
+		font-weight:bold;
+		padding-left:8px;
+		padding-right:7px;
+	}
+
+/*/ MAIN CONTENT /*/
+	.trailheader{
+		visibility:hidden;
+		position:relative;
+		width:1000px;
+		border:0px solid yellow;
+	}
+	.trail{
+		visibility:hidden;
+		position:absolute;
+		/*display: block;*/
+		margin-top:4px;
+		margin-left:6px;
+		width:790px;
+		left:0px;
+		top:0px;
+		/*padding-left:6px;*/
+		text-align: left;
+		font-size:10pt;
+	}
+	.pageheader{
+		display: block;			/* puts image on new line */
+		width:400px;
+		text-align: center;
+		overflow:wrap;
+		margin-right:auto;
+		margin-left:auto;
+	}
+	h1{
+		margin-top:0px;
+		margin-bottom:10px;
+		font-size:20pt;
+		font-weight:bold;
+	}
+
+/*/ BOTTOM MENU /*/
+	.order{
+		width:600px;
+		margin-left: auto; 
+		margin-right: auto;
+		font-weight:bold;
+		margin-top: 5px;
+	}
+	.request{
+		position:relative;
+		width:600px;
+		margin-left: auto; 
+		margin-right: auto;
+		font-weight:bold;
+		margin-top: 12px;	
+	}
+	.bottomlinks{
+		width:800px;
+		margin-top: 30px;
+		margin-bottom:15px;
+	}
+	.bottomlink{
+		padding-right:15px;
+	}
+
+/*/ LINKS /*/
+	a{
+		text-decoration:none;
+		color:black;
+	}
+	a:hover{
+		text-decoration:underline;
+	}
+
+	a.traillink{
+		text-decoration:underline;
+	}
+
+/*/ HOME PAGE /*/
+	.atwilber{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		width: 800px;
+		text-align: center;
+		margin-right:auto;
+		margin-left:auto;
+		font-weight: normal;
+		font-size: 12pt;
+	}
+	.imagediv{
+		position:relative;
+		background-image: url(images/shadow.png);
+		background-repeat:no-repeat;
+		margin-left: auto; 
+		margin-right: auto;
+		width: 396px;
+		height: 284px;
+		padding: 0;
+		text-align:left;
+		vertical-align:top;
+	}
+	.btcmenu{
+		margin-left: auto; 
+		margin-right: auto;
+		margin-top: 10px;
+		text-align: center;	
+		/*border: 1px solid black;*/
+		width: 600px;
+	}
+	.btclink{
+		font-size: 18pt;
+		font-weight: bold;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	.brownband_homepage{
+		background-image: url(images/band.gif);
+		background-repeat: repeat-x;
+	}
+	.button{
+		cursor:pointer;
+		cursor:hand;
+	}
+
+/*/ CATEGORY PAGE /*/
+	.brownband{
+		background-image: url(images/page2band.gif);
+		background-repeat: repeat-x;
+		text-align:center;
+		/*height:250px;*/
+	 }
+	.brownband1{
+		background-image: url(images/page2band1.gif);
+		background-repeat: repeat-x;
+		text-align:center;
+		/*height:250px;*/
+	 }
+	.contain_all_products {
+		width: 800px;
+		margin-left:auto;
+		margin-right:auto;
+		text-align: center;
+		vertical-align:top;
+	 }
+	.outer_single_product {
+		display: -moz-inline-box; /* for FF & Mozilla */
+		display: inline-block;
+		width: 180px;
+		/*height: 150px;*/
+		margin-left: 5px;
+		margin-right: 5px;
+		vertical-align:top;
+		text-align: center;
+	 }
+	.inner_single_product{		/* FF & Mozilla need the extra span */
+		display: block;
+		text-align: center;
+	}
+	.producthead{
+		display: block;
+		text-align: center;
+		font-size: 14pt;
+		font-weight: bold;
+		margin-bottom:4px;
+	 }
+	.prodimage{
+		border:	2px solid black;
+		display: block;			/* puts image on new line */
+		margin-left: auto;		/* and centers it*/
+		margin-right:auto;
+		margin-bottom:2px;
+	 }
+	.models{
+		/*width:90px;*/
+		display: block;
+		/*margin-left: auto;
+		margin-right: auto;*/
+		text-align: center;
+		font-size: 10pt;
+		font-weight: bold;
+	 }
+
+	.model{
+		display:block;
+		margin-top:0px;
+		margin-bottom:2px;
+	 }
+
+/*/ MODELS PAGE /*/
+
+
+/*/ SITEMAP PAGE /*/
+	.list_top{
+		background-image:url(images/list_top.gif);
+		background-position:top left;
+		background-repeat:no-repeat;
+		padding-left:1em;
+		padding-top:0px;
+		padding-bottom: inherit;
+		height:23px;
+		font-size:10pt;
+	}
+	.listpage{
+		background-image:url(images/list_image.gif);
+		background-position:top left;
+		background-repeat:no-repeat;
+		padding-left:1em;
+		padding-top:0px;
+		padding-bottom: inherit;
+		height:23px;
+		font-size:10pt;
+	}
+	.listbottom{
+		background-image:url(images/list_bottom.gif);
+		background-position:top left;
+		background-repeat:no-repeat;
+		padding-left:1em;
+		padding-top:0px;
+		padding-bottom: inherit;
+		height:23px;
+		font-size:10pt;
+	}
+	.mainpagelink{
+		font-weight:bold;
+	}
+
+	.sitemapSectionHeading {
+		display: block;
+		text-align: left;
+	}
+
+
+/*/ INFO PAGE /*/
+.infopage{
+	width: 75%;
+	text-align: left;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	line-height:16pt;
+	
+}
+
+/*/ HISTORY PAGE /*/
+.historypage{
+	width: 75%;
+	text-align: left;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*/ PRODUCT PAGES /*/
+	.productdiv{
+		width:700px;
+		margin-left:auto;
+		margin-right:auto;
+		text-align:left;
+		padding:5px;
+	}
+	.prodimage_models_page{
+		border:	2px solid black;
+		display: inline;
+		margin-bottom:2px;
+		margin-top:10px;
+		/*float:left;*/
+	}
+	.product_heading{
+		font-size:14pt;
+		font-weight:bold;
+		text-decoration:underline;
+	 }
+	 .description{
+		margin-left:20px;
+		vertical-align:top;
+		width:500px;
+	 }
+	 .details{
+		display:block;
+		vertical-align:top;
+		font-size:10pt;
+		margin-left:10px;
+	 }
+	 p{
+		margin-top:5px;
+		font-size:10pt;
+	 }
+	 .productsheet_link{
+		font-size:10pt;
+		font-weight:bold;
+		text-decoration:underline;
+	 }
+	 .morepictures_link{
+		font-size:10pt;
+		font-weight:bold;
+		text-decoration:underline;
+		margin-right:5px;
+	 }
+	 .spacer{
+		height: 5px; 
+		line-height:5px;
+		width: 725px; 
+		margin-top: 5px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: #7B7748; 
+		border:1px solid black;
+		padding:0px;
+		height:7px;
+	 }
+	 .moreless{
+		cursor:pointer;
+		cursor:hand;
+		font-weight:bold;
+		text-decoration:underline;
+		font-size:10pt;
+	 }
+	 .enlarge_link_text{
+		cursor:pointer;
+		cursor:hand;
+		font-weight:bold;
+		text-decoration:underline;
+		font-size:10pt;
+	 }
+	.hidden_info{
+		margin-top:5px;
+		font-size:10pt;
+	}
+
+/*/CONTACT US/*/
+	div.row {
+		clear: both;
+		padding-top: 5px;
+	}
+	.label {
+		float: left;
+		width: 85px;
+		text-align: right;
+	}
+	.formw {
+		float: right;
+		width: 200px;
+		text-align: left;
+	} 
+
+/*/ HISTORY /*/
+	.year{
+		width:40px;
+		font-size:10pt;
+		font-weight:bold;
+		float:left;
+		vertical-align:top;
+		margin-right:5px;
+	}
+	.events{
+		width:550px;
+		font-size:10pt;
+		margin-bottom:0pt;
+		float:left;
+	}
+	.eventseparator{
+		width: 600px;
+		height: 1px;
+		text-align: center;
+		color: #64603A;
+		margin-bottom:5pt;
+	}
+	li{
+		margin-bottom:10pt;
+		margin-left:15pt;
+		font-size:10pt;
+	}
+
+/*/ PRODUCT SHEETS /*/
+	.productsheet{
+		padding-bottom:5px;
+
+	}
+	.instructions{
+		font-size: 10pt;
+	}
+
+/*/ CART TEXT /*/
+.carttext{
+	font-size:8pt;
+	font-weight:bold;
+}
+.qtytext{
+	font-size:8pt;
+}
+
+.CartTable{
+	border:1px solid black;
+	background-color:white;
+	border-collapse:collapse;
+}
+.CartHeaderRow{
+	font-size:12pt;
+}
+
+.CartHeaderRow td{
+	padding-left:10px;
+	padding-right:10px;	
+}
+
+.CartItemRow{
+	font-size:8pt;
+	padding-left:10px;
+	padding-right:10px;	
+}
+
+.CartItemRow td{
+	font-size:8pt;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:5px;
+	padding-bottom:5px;
+	border: 1px solid black;
+}
+
+.EmptyCartLinksToProducts{
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+.EmptyCartLinksToProducts:hover{
+	text-decoration:none;
+}
+
+.leftcol{
+	text-align:right;
+	font-size:10pt;
+}
+
+.rightcol{
+	text-align:left;
+}
+
+
+.headercell{
+	padding-left:5px;
+	padding-right:5px;
+	text-align:center;
+	font-size:10pt;
+	font-weight:bold;
+}
+.pricetablecell{
+	padding-left:10px;
+	padding-right:10px;
+	text-align:center;
+	font-size:10pt;
+}

@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Collapsible Picnic Table Demonstration</title>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+-->
+</style>
+<script language="JavaScript">
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+<body onLoad="MM_swapImage('swapit','','new_images/Picnic_Table.gif',0);" onBlur="self.close();">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top"><img src="new_images/loadani.gif" alt="Wilber Picnic Table" name="swapit" width="471" height="314" id="swapit"/></td>
+  </tr>
+</table>
+<img src="new_images/Picnic_Table.gif" width="1" height="1" />
+</body>
+</html>

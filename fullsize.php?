@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Full-size Image. Wilber Manufacturing - Aluminum and vinyl Site Furnishings, Site Amenities and Outdoor Furniture.</title>
+
+<link rel="stylesheet" type="text/css" href="site_new.css">
+<script type='text/javascript' src='exmplmenu_var.js'></script>
+</head>
+<body style="margin:0px; background-image: url(images/loading.gif);background-repeat: no-repeat; background-attachment: fixed; background-position: 120px 120px;" onLoad='fitPic1();'>
+<div style="width:100%;height:100%;">
+	<div style="margin:auto;"> 
+		<img src="thumbnail.php?image=/product_images/&width=700&height=600" border=0 align=left>
+	</div>
+</div>
+
+<style type="text/css">
+* {margin: 0;}
+html, body {height: 100%;}
+</style>
+
+<script language='javascript'>
+var temp=self.location.href.split("?");
+var picUrl = (temp.length>1)?temp[1]:"";
+var ie=document.all;
+var NS = (navigator.appName=="Netscape")?true:false;
+var dom=document.getElementById;
+var resizeCounter=1;
+var nAmount=(ie)?32:49;
+
+function fitPic1(){
+	setTimeout("fitPic()", 100);
+}
+
+function fitPic() {
+	document.images[0].style.visibility="";
+	//GET BROWSER HEIGHT AND WIDTH
+	windowHeight = (NS)?window.innerHeight:document.body.clientHeight;
+	windowWidth = (NS)?window.innerWidth:document.body.clientWidth;
+	//GET IMAGE HEIGHT AND WIDTH
+	imageHeight = document.images[0].height;
+	imageWidth = document.images[0].width;
+	//GET SCREEN HEIGHT AND WIDTH
+	screenHeight = screen.height;
+	screenWidth = screen.width;
+	
+	var winTop=50;
+	var winLeft=50;
+
+	if(screenHeight-100 > imageHeight && screenWidth-100 > imageWidth){
+	//THE SCREEN IS A LOT BIGGER THAN THE IMAGE
+		//FIGURE OUT HOW MUCH BIGGER WE NEED TO MAKE THE BROWSER
+		iHeight = imageHeight - windowHeight;
+		iWidth = imageWidth - windowWidth;
+		
+		//CENTER THE BROWSER ON THE SCREEN
+		winTop = (screen.height) ? ((screen.height-windowHeight)/2)-30 : 50;
+		winLeft = (screen.width) ? (screen.width-windowWidth)/2 : 50;
+
+		//MAKE THE BROWSER BIG ENOUGH TO FIT THE IMAGE
+		window.resizeBy(iWidth, iHeight);
+
+	}else{
+	//JUST FIT THE BROWSER TO THE SCREEN
+		//THE BROWSER FIT WITHIN THE SCREEN
+		window.resizeBy((screenWidth-windowWidth-100),(screenHeight-windowHeight-200));
+	}
+
+	//MOVE THE WINDOW SOMEWHERE
+	self.moveTo(winLeft,winTop);
+	//SET FOCUS TO WINDOW
+	self.focus();
+	//REMOVE THE "LOADING" IMAGE FROM THE BACKGROUND
+	document.body.style.backgroundImage ='';
+	//CALL IT A FEW TIMES BECAUSE 
+	if(resizeCounter<2){
+		setTimeout("fitPic()", 15);
+		resizeCounter++;
+	}
+}
+
+</script>
+</body>
+</html>

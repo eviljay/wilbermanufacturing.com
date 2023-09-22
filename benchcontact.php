@@ -1,0 +1,1 @@
+This script does not allow requests with a GET method.
